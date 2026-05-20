@@ -1,0 +1,6 @@
+{
+  "name": "Apparel Order Consolidator",
+  "description": "Consolidates clothing items from multiple customer orders or Excel sheets to create a clean, aggregated count list of items to order from vendors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

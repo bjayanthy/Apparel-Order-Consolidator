@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bg-natural: #FDFBF7;
+  --color-text-natural: #3E362E;
+  --color-accent-natural: #5A6A5C;
+  --color-muted-natural: #F4EFE9;
+  --color-cream-natural: #FAF9F6;
+  --color-border-natural: #EBE3D5;
+  --color-sand-natural: #D1C7BC;
+}
+
+body {
+  background-color: var(--color-bg-natural);
+  color: var(--color-text-natural);
+  font-family: var(--font-sans);
+}
+
+/* Scrollbar customization with earthy colors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-natural);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand-natural);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-natural);
+}
+
+/* Custom print styles to ensure printing the order list yields ultra-clean results */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
